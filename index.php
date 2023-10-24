@@ -10,7 +10,7 @@ if (isset($_GET['page']) & !empty($_GET['page'])) {
     $curpage = 1;
 }
 $start = ($curpage * $perpage) - $perpage;
-$PageSql = "SELECT * FROM data_user";
+$PageSql = "SELECT * FROM kuesioner";
 $pageres = mysqli_query($con, $PageSql);
 $totalres = mysqli_num_rows($pageres);
 
@@ -19,12 +19,12 @@ $startpage = 1;
 $nextpage = $curpage + 1;
 $previouspage = $curpage - 1;
 
-$ReadSql = "SELECT * FROM data_user ORDER BY id_user DESC LIMIT $start, $perpage";
+$ReadSql = "SELECT * FROM kuesioner ORDER BY id_user DESC LIMIT $start, $perpage";
 $res = mysqli_query($con, $ReadSql);
 ?>
 
 <?php
-$query = "SELECT kepuasan, count(*) as number FROM data_user GROUP BY kepuasan";
+$query = "SELECT kepuasan, count(*) as number FROM kuesioner GROUP BY kepuasan";
 $result = mysqli_query($con, $query) or die("error kepuasan");
 
 ?>
@@ -229,7 +229,7 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
         $jam    = $_POST['jam'];
 
         $kepuasan = "Senang";
-        $sql = mysqli_query($con, "INSERT INTO data_user(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
+        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
         if ($sql) {
             echo '
             <script type="text/javascript">
@@ -252,7 +252,7 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
         $jam    = $_POST['jam'];
 
         $kepuasan = "Biasa";
-        $sql = mysqli_query($con, "INSERT INTO data_user(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
+        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
         if ($sql) {
             echo '
             <script type="text/javascript">
@@ -274,7 +274,7 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
         $jam    = $_POST['jam'];
 
         $kepuasan = "Tidak Senang";
-        $sql = mysqli_query($con, "INSERT INTO data_user(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
+        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
         if ($sql) {
             echo '
             <script type="text/javascript">
@@ -296,7 +296,7 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
         $jam    = $_POST['jam'];
 
         $kepuasan = "Sangat Senang";
-        $sql = mysqli_query($con, "INSERT INTO data_user(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
+        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
         if ($sql) {
             echo '
             <script type="text/javascript">
@@ -318,7 +318,7 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
         $jam    = $_POST['jam'];
 
         $kepuasan = "Sangat Buruk";
-        $sql = mysqli_query($con, "INSERT INTO data_user(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
+        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
         if ($sql) {
             echo '
             <script type="text/javascript">

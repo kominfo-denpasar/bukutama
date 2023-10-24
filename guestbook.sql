@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 24, 2023 at 11:18 AM
+-- Generation Time: Oct 24, 2023 at 11:22 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.1.17
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data_user`
+-- Table structure for table `kuesioner`
 --
 
-CREATE TABLE `data_user` (
+CREATE TABLE `kuesioner` (
   `id_user` int(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `email` text NOT NULL,
@@ -38,10 +38,10 @@ CREATE TABLE `data_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `data_user`
+-- Dumping data for table `kuesioner`
 --
 
-INSERT INTO `data_user` (`id_user`, `nama`, `email`, `pesan`, `kepuasan`, `tgl`, `jam`) VALUES
+INSERT INTO `kuesioner` (`id_user`, `nama`, `email`, `pesan`, `kepuasan`, `tgl`, `jam`) VALUES
 (10, 'Pande Suandana', 'Denpasar', 'Denpasar Mantap', 'Sangat Senang', '2022-04-07', '06:59:50am'),
 (11, 'Tina Kristini', 'Tabanan', 'Sudah Bagus ditingkatkan lagi', 'Senang', '2022-04-07', '07:38:12am'),
 (12, 'I Kadek Agus Arya Wibawa', 'Denpasar', 'Denpasar Maju.', 'Sangat Senang', '2022-04-08', '02:35:03am'),
@@ -90,9 +90,9 @@ INSERT INTO `data_user` (`id_user`, `nama`, `email`, `pesan`, `kepuasan`, `tgl`,
 --
 
 --
--- Indexes for table `data_user`
+-- Indexes for table `kuesioner`
 --
-ALTER TABLE `data_user`
+ALTER TABLE `kuesioner`
   ADD PRIMARY KEY (`id_user`);
 
 --
@@ -100,9 +100,9 @@ ALTER TABLE `data_user`
 --
 
 --
--- AUTO_INCREMENT for table `data_user`
+-- AUTO_INCREMENT for table `kuesioner`
 --
-ALTER TABLE `data_user`
+ALTER TABLE `kuesioner`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 COMMIT;
 
