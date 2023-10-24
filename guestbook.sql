@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Oct 24, 2023 at 01:59 PM
--- Server version: 5.7.43
--- PHP Version: 8.1.16
+-- Host: 127.0.0.1
+-- Generation Time: Oct 24, 2023 at 11:22 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.1.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,30 +18,30 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `spbedps_bukutamu`
+-- Database: `guestbook`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data_user`
+-- Table structure for table `kuesioner`
 --
 
-CREATE TABLE `data_user` (
+CREATE TABLE `kuesioner` (
   `id_user` int(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
-  `alamat` text NOT NULL,
+  `email` text NOT NULL,
   `pesan` text NOT NULL,
   `kepuasan` text NOT NULL,
-  `tgl` text NOT NULL,
+  `tgl` date NOT NULL,
   `jam` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `data_user`
+-- Dumping data for table `kuesioner`
 --
 
-INSERT INTO `data_user` (`id_user`, `nama`, `alamat`, `pesan`, `kepuasan`, `tgl`, `jam`) VALUES
+INSERT INTO `kuesioner` (`id_user`, `nama`, `email`, `pesan`, `kepuasan`, `tgl`, `jam`) VALUES
 (10, 'Pande Suandana', 'Denpasar', 'Denpasar Mantap', 'Sangat Senang', '2022-04-07', '06:59:50am'),
 (11, 'Tina Kristini', 'Tabanan', 'Sudah Bagus ditingkatkan lagi', 'Senang', '2022-04-07', '07:38:12am'),
 (12, 'I Kadek Agus Arya Wibawa', 'Denpasar', 'Denpasar Maju.', 'Sangat Senang', '2022-04-08', '02:35:03am'),
@@ -84,6 +84,26 @@ INSERT INTO `data_user` (`id_user`, `nama`, `alamat`, `pesan`, `kepuasan`, `tgl`
 (49, 'Danendra', '', 'Senang dapat informasi baru', 'Sangat Senang', '2023-06-04', '09:10:10am'),
 (50, 'Saiful', '', 'Bagus', 'Sangat Senang', '2023-08-16', '03:24:02am'),
 (51, 'Hery', '', 'Sangat bagus', 'Senang', '2023-08-16', '03:27:17am');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `kuesioner`
+--
+ALTER TABLE `kuesioner`
+  ADD PRIMARY KEY (`id_user`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `kuesioner`
+--
+ALTER TABLE `kuesioner`
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
