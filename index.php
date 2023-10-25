@@ -105,7 +105,11 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
             </div>
             <br>
             <div class="formgroup" id="email-form">
-                <input type="text" id="email" name="email" placeholder="Enter Email" required />
+                <input type="email" id="email" name="email" placeholder="Enter Email" required />
+            </div>
+            <br>
+            <div class="formgroup" id="daerah-form">
+                <input type="text" id="daerah" name="asaldaerah" placeholder="Enter Asal Daerah" required />
             </div>
             <br>
             <div class="formgroup" id="message-form">
@@ -224,12 +228,14 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
 
         $nama   = $_POST['nama'];
         $email = $_POST['email'];
+        $asaldaerah = $_POST['asaldaerah'];
+        $asaldaerah_new = ucwords($asaldaerah);
         $pesan  = $_POST['pesan'];
         $tgl    = $_POST['tgl'];
         $jam    = $_POST['jam'];
 
         $kepuasan = "Senang";
-        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
+        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,asal_daerah,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$asaldaerah_new', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
         if ($sql) {
             echo '
             <script type="text/javascript">
@@ -247,12 +253,14 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
 
         $nama   = $_POST['nama'];
         $email = $_POST['email'];
+        $asaldaerah = $_POST['asaldaerah'];
+        $asaldaerah_new = ucwords($asaldaerah);
         $pesan  = $_POST['pesan'];
         $tgl    = $_POST['tgl'];
         $jam    = $_POST['jam'];
 
         $kepuasan = "Biasa";
-        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
+        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,asal_daerah,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$asaldaerah_new', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
         if ($sql) {
             echo '
             <script type="text/javascript">
@@ -269,12 +277,14 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
 
         $nama   = $_POST['nama'];
         $email = $_POST['email'];
+        $asaldaerah = $_POST['asaldaerah'];
+        $asaldaerah_new = ucwords($asaldaerah);
         $pesan  = $_POST['pesan'];
         $tgl    = $_POST['tgl'];
         $jam    = $_POST['jam'];
 
         $kepuasan = "Tidak Senang";
-        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
+        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,asal_daerah,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$asaldaerah_new', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
         if ($sql) {
             echo '
             <script type="text/javascript">
@@ -291,12 +301,14 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
 
         $nama   = $_POST['nama'];
         $email = $_POST['email'];
+        $asaldaerah = $_POST['asaldaerah'];
+        $asaldaerah_new = ucwords($asaldaerah);
         $pesan  = $_POST['pesan'];
         $tgl    = $_POST['tgl'];
         $jam    = $_POST['jam'];
 
         $kepuasan = "Sangat Senang";
-        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
+        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,asal_daerah,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$asaldaerah_new', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
         if ($sql) {
             echo '
             <script type="text/javascript">
@@ -313,12 +325,14 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
 
         $nama   = $_POST['nama'];
         $email = $_POST['email'];
+        $asaldaerah = $_POST['asaldaerah'];
+        $asaldaerah_new = ucwords($asaldaerah);
         $pesan  = $_POST['pesan'];
         $tgl    = $_POST['tgl'];
         $jam    = $_POST['jam'];
 
         $kepuasan = "Sangat Buruk";
-        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
+        $sql = mysqli_query($con, "INSERT INTO kuesioner(id_user,nama,email,asal_daerah,pesan,kepuasan,tgl,jam) VALUES (null, '$nama', '$email', '$asaldaerah_new', '$pesan', '$kepuasan', '$tgl', '$jam') ") or die("error");
         if ($sql) {
             echo '
             <script type="text/javascript">
