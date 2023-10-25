@@ -109,7 +109,7 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
             </div>
             <br>
             <div class="formgroup" id="daerah-form">
-                <input type="text" id="daerah" name="asaldaerah" placeholder="Enter Asal Daerah" required />
+                <input type="text" id="daerah" name="asaldaerah" placeholder="Enter Asal Daerah/Nama Instansi" required />
             </div>
             <br>
             <div class="formgroup" id="message-form">
