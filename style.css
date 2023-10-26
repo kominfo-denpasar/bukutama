@@ -19,16 +19,27 @@ h1 {
   text-transform: uppercase;
 }
 
-#form {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
-  width: 80%;
+@media screen and (min-width: 800px) {
+  #form {
+    position: absolute;
+    top: 37%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: 80%;
+  }
 }
+@media screen and (min-width: 250px) {
+  #form {
+    position: absolute;
+    top: 13%;
+    left: 0;
+    right: 0;
+  }
+}
+
 form {
   margin: 0 auto;
   width: 800px;
@@ -180,5 +191,5 @@ button {
   background-position: center;
   background-size: cover;
   /* width: 90%; */
-  height: 790px;
+  height: 800px;
 }

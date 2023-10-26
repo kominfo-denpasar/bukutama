@@ -96,7 +96,7 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
         <!-- </div> -->
     </div>
 
-    <div id="form" method="post" style="margin-top: -86px;">
+    <div id="form" method="post">
 
         <form id="waterform" method="post">
 
@@ -138,25 +138,23 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
                 <tr align="center">
                     <td colspan="5" id="specialtext" style="color: black;">Pilih salah satu gambar untuk men-submit jawaban anda</td>
                 </tr>
-                <tr align="center">
+                <!-- <tr align="center">
                     <td colspan="5" id="specialtext"><a href="#two" id="link" style="color: black;">Lihat Hasil Polling</a></td>
-                </tr>
+                </tr> -->
             </table>
         </form>
     </div>
-    </div>
 
+    <!-- <div id="two"><br><br></div>
+        <div class="test" id="page2" style="padding-bottom:  100px;">
+            <div id="piechart" style="width: 1400px; height: 500px;" class="pages"><a href="#top">Isi Buku Tamu</a></div>
+            <div class="link"><a href="#top" id="link2">
+                    <center>Isi Buku Tamu</center>
+                </a></div>
 
-    <div id="two"><br><br></div>
-    <div class="test" id="page2" style="padding-bottom:  100px;">
-        <div id="piechart" style="width: 1400px; height: 500px;" class="pages"><a href="#top">Isi Buku Tamu</a></div>
-        <div class="link"><a href="#top" id="link2">
-                <center>Isi Buku Tamu</center>
-            </a></div>
+        </div> -->
 
-    </div>
-
-    <div class="test" id="page3" style="height:100%">
+    <!-- <div class="test" id="page3" style="height:100%">
 
         <table align="center" class="responstable">
             <tr>
@@ -219,7 +217,7 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
 
             <?php } ?>
         </div>
-    </div>
+    </div> -->
 
     <!-- post process start here -->
     <?php
