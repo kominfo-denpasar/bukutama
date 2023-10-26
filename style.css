@@ -19,10 +19,10 @@ h1 {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   #form {
     position: absolute;
-    top: 37%;
+    top: 57%;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -31,10 +31,10 @@ h1 {
     width: 80%;
   }
 }
-@media screen and (min-width: 250px) {
+@media screen and (min-width: 450px) {
   #form {
     position: absolute;
-    top: 13%;
+    top: 15%;
     left: 0;
     right: 0;
   }
