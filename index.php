@@ -87,16 +87,16 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
 </head>
 
 <body>
-    <div id="particles-js">
-        <div class="test" id="top">
-            <br> </br>
-            <center><img src="img/kota.png" alt="" height="200" width="200"></center>
+    <div id="particles-js"">
+        <!-- <div class=" test" id="top"> -->
+        <!-- <br> </br> -->
+        <!-- <center><img src="img/kota.png" alt="" height="200" width="200"></center> -->
 
-            <h1>Pemerintah Kota Denpasar</h1>
-        </div>
+        <!-- <h1>Pemerintah Kota Denpasar</h1> -->
+        <!-- </div> -->
     </div>
 
-    <div id="form" method="post">
+    <div id="form" method="post" style="margin-top: -86px;">
 
         <form id="waterform" method="post">
 
@@ -123,7 +123,7 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
                 <tr>
                     <td colspan="5" id="specialtext" colspan="5">
                         <center>
-                            <div class="kepuasan">Kepuasan</div>
+                            <div class="kepuasan" style="color: black; margin-top: -15px;">Kepuasan</div>
                         </center>
                     </td>
                 </tr>
@@ -136,10 +136,10 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
 
                 </tr>
                 <tr align="center">
-                    <td colspan="5" id="specialtext">Pilih salah satu gambar untuk men-submit jawaban anda</td>
+                    <td colspan="5" id="specialtext" style="color: black;">Pilih salah satu gambar untuk men-submit jawaban anda</td>
                 </tr>
                 <tr align="center">
-                    <td colspan="5" id="specialtext"><a href="#two" id="link">Lihat Hasil Polling</a></td>
+                    <td colspan="5" id="specialtext"><a href="#two" id="link" style="color: black;">Lihat Hasil Polling</a></td>
                 </tr>
             </table>
         </form>
@@ -147,7 +147,7 @@ $result = mysqli_query($con, $query) or die("error kepuasan");
     </div>
 
 
-    <div id="two"></div>
+    <div id="two"><br><br></div>
     <div class="test" id="page2" style="padding-bottom:  100px;">
         <div id="piechart" style="width: 1400px; height: 500px;" class="pages"><a href="#top">Isi Buku Tamu</a></div>
         <div class="link"><a href="#top" id="link2">
