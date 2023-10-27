@@ -21,19 +21,15 @@ h1 {
 
 @media screen and (min-width: 1000px) {
   #form {
-    position: absolute;
     top: 57%;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
-    width: 80%;
   }
 }
 @media screen and (min-width: 450px) {
   #form {
-    position: absolute;
     top: 15%;
     left: 0;
     right: 0;
@@ -42,7 +38,6 @@ h1 {
 
 form {
   margin: 0 auto;
-  width: 800px;
   padding-top: 5%;
   color: white;
   position: relative;
@@ -55,15 +50,14 @@ textarea {
 }
 input,
 textarea {
-  width: 800px;
   border: none;
-  border-radius: 20px;
-  outline: none;
-  padding: 10px;
+  border-radius: 20px !important;
+  outline: none !important;
+  padding: 10px !important;
   font-family: "tahoma";
   font-size: 1.1em;
-  color: #676767;
-  transition: border 0.5s;
+  color: #676767 !important;
+  transition: border 0.5s !important;
   -webkit-transition: border 0.5s;
   -moz-transition: border 0.5s;
   -o-transition: border 0.5s;
@@ -86,7 +80,7 @@ textarea {
 }
 input,
 textarea {
-  border-color: #167f92;
+  border-color: #167f92 !important;
 }
 
 /*label{
@@ -185,11 +179,14 @@ button {
   font-size: 19px;
 }
 
-#particles-js {
+.bg-header {
   background: url("img/buku\ tamu\ BG-01.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  padding-top: 260px;
   background-size: cover;
   /* width: 90%; */
-  height: 800px;
+}
+
+td {
+  width: 10%;
 }
